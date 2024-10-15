@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            background-color: lightgrey;
+        }
+        /*Descendant Selector -> all the para inside container*/
+        .container p{
+            color: red;
+        }
+        /*Direct Child*/
+        .container > p{
+            color: blue;
+        }
+        /*adajcent sibling or Immediate Sibling -> Just before element*/
+        .container + p{
+            color: green;
+        } /*Group Selector -> similar styling in different tags -> seperated with commas*/
+        /*General Sibling -> (~) -> This symbol is used (any sibling before that)*/
+
+        /*Attribute Selector*/
+        /*input[type="date"]{*/
+        /*    */
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="container">
+       <p> hey</p>
+        <section>
+            <p> hey</p>
+        </section>
+        <p> hey</p>
+    </div>
+<p>hey</p>
+</body>
+</html>

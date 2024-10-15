@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .main{
+            border:2px solid red;
+            height:1200vh;
+            width:90vw;
+        }
+        .container{
+            border:2px solid green;
+            height:50%;
+            width:70%;
+            margin:30px;
+            /*position:relative;*/
+         }
+        .item{
+            border:2px solid orange;
+            width:100px;
+            height:100px;
+            margin:2px;
+        }
+        /*#item-2{*/
+        /*    position:relative;*/
+        /*    left:105px;*/
+        /*    top:106px;*/
+        /*}*/
+
+        /*#item-2{*/
+        /*    position:absolute;*/
+        /*    left:105px;*/
+        /*}*/
+
+        /*#item-3{*/
+        /*    position:fixed;*/
+        /*    top:20px;*/
+        /*    right:50px;*/
+        /*}*/
+
+        /*#item-1{   disappears when parent element diappears*/
+        /*    position:sticky;*/
+        /*    top:40px;*/
+        /*    right:50px;
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="item" id="item-1">item-1</div>
+            <div class="item" id="item-2">item-2</div>
+            <div class="item" id="item-3">item-3</div>
+        </div>
+    </div>
+
+</body>
+</html>
